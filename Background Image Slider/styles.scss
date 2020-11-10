@@ -1,0 +1,51 @@
+@import "../main";
+
+body {
+  width: auto;
+  height: auto;
+  @include flex-center();
+}
+.container {
+  @include width(1366px);
+  @include height(256px);
+  @include flex-center-left-center();
+}
+.img-container {
+  @include width(1366px);
+  @include height(256px);
+  background-image: url("images/img-0.jpg");
+  @include flex-center-left-center();
+  & .button-left, .button-right {
+    @include width(683px);
+    display: flex;
+    align-items: center;
+    & .btn {
+      @include width(35px);
+      @include height(35px);
+      &--standard {
+        @include all-border(0px, 0px, 0px, 0px);
+        @include border-radius(50px, 50px, 50px, 50px);
+        background-color: #FFFFFF;
+        opacity: 0.35;
+      }
+      &__text {
+        @include font-size(25px);
+        font-weight: bold;
+      }
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+  & .button-left {
+    @include all-padding(0px, 0px, 0px, 10px);
+    justify-content: flex-start;
+  }
+  & .button-right {
+    @include all-padding(0px, 10px, 0px, 0px);
+    justify-content: flex-end;
+  }
+}
+
+
+

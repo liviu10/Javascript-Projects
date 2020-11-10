@@ -1,0 +1,52 @@
+@import "../main";
+
+body {
+  width: auto;
+  height: 100vh;
+  @include flex-center();
+  flex-direction: column;
+}
+.container {
+  @include all-border(1px, 1px, 1px, 1px);
+  @include border-radius(5px, 5px, 5px, 5px);
+  @include all-padding(10px, 10px, 10px, 10px);
+  @include width(600px);
+  @include height(480px);
+  @include flex-center();
+  flex-direction: column;
+  & .title {
+    @include width(480px);
+    @include height(80px);
+    @include flex-center();
+    & .h1-typography {
+      @include h1-typography;
+      @include all-margin(0px, 0px, 0px, 0px);
+      @include height(80px);
+      @include font-size(50px);
+      user-select: none;
+      @include flex-center();
+    }
+  }
+  & .input {
+    @include input;
+    @include width(600px);
+    @include flex-center();
+    flex-direction: column;
+    &__label {
+      @include width(580px);
+      @include flex-center-left-center();
+      font-weight: bold;
+    }
+    &__control {
+      @include width(580px);
+    }
+    &__dropdown {
+      @include width(587px);
+    }
+  }
+  & .btn {
+    @include btn;
+    @include horizontal-vertical-margin(20px, 0px, 20px, 0px);
+    @include width(400px);
+  }
+}

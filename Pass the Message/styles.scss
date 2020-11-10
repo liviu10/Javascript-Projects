@@ -1,0 +1,70 @@
+@import "../main";
+
+body {
+  width: auto;
+  height: 100vh;
+  @include flex-center();
+  flex-direction: column;
+}
+.container {
+  @include all-border(1px, 1px, 1px, 1px);
+  @include width(600px);
+  @include height(380px);
+  @include flex-center();
+  flex-direction: column;
+}
+.title {
+  @include width(600px);
+  @include height(50px);
+  @include flex-center();
+  & .h1-typography {
+    @include h1-typography;
+    font-weight: bold;
+    user-select: none;
+  }
+}
+.input {
+  @include width(600px);
+  @include height(250px);
+  @include flex-center();
+  flex-direction: column;
+  &__control {
+    @include all-margin(0px, 0px, 0px, 0px);
+    @include width(550px);
+    @include height(60px);
+  }
+  & .btn {
+    @include all-margin(20px, 0px, 0px, 0px);
+    &--standard {
+      background-color: #66CC00;
+      border-color: #66CC00;
+      @include border-radius(5px, 5px, 5px, 5px);
+    }
+  }
+}
+.results {
+  @include width(600px);
+  @include height(80px);
+  @include flex-center();
+  & .alert {
+    @include width(550px);
+    &--standard {
+      background-color: #FF9999;
+    }
+    &__text {
+      @include all-padding(0px, 0px, 0px, 0px);
+      justify-content: center;
+    }
+    &:hover {
+      cursor: default;
+    }
+  }
+  & .h2-typography {
+    @include h2-typography;
+    color: #66CC00;
+    user-select: none;
+  }
+}
+#feedback, #message-content {
+  display: none;
+}

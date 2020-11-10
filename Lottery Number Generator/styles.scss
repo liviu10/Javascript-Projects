@@ -1,0 +1,50 @@
+@import "../main";
+
+body {
+  width: auto;
+  height: 100vh;
+  @include flex-center();
+}
+.container {
+  @include all-border(1px, 1px, 1px, 1px);
+  @include border-radius(5px, 5px, 5px, 5px);
+  @include all-padding(10px, 10px, 10px, 10px);
+  @include width(600px);
+  @include height(480px);
+  @include flex-center();
+  flex-direction: column;
+}
+.title {
+  @include width(600px);
+  @include height(100px);
+  @include flex-center();
+}
+.lotto-numbers {
+  @include width(600px);
+  @include height(230px);
+  @include flex-center();
+  & .random-numbers {
+    @include flex-center();
+    & .number {
+      @include horizontal-vertical-margin(0px, 5px, 0px, 5px);
+      @include all-border(1px, 1px, 1px, 1px);
+      @include border-radius(50px, 50px, 50px, 50px);
+      @include width(80px);
+      @include height(80px);
+      @include flex-center();
+    }
+  }
+}
+.button-generate, .button-reset {
+  @include width(600px);
+  @include height(50px);
+  @include flex-center();
+  .btn {
+    &--standard {
+      @include border-radius(5px, 5px, 5px, 5px);
+    }
+  }
+}
+.button-generate {
+  @include all-margin(0px, 0px, 10px, 0px);
+}

@@ -1,0 +1,14 @@
+@import "../main";
+
+body {
+  width: auto;
+  height: 100vh;
+  @include flex-center();
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+.btn {
+  @include horizontal-vertical-padding (5px, 0px, 5px, 0px);
+  @include width (200px);
+  height: auto;
+}
