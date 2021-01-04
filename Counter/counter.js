@@ -3,7 +3,7 @@
   let count = 0
 
 
-  //Add event listeners and functionailty to each button  
+  //Add event listeners and functionality to each button  
   buttons.forEach(function(button){
     button.addEventListener('click', function(){
       if (button.classList.contains('prevBtn')){
