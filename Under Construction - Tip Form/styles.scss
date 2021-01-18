@@ -45,7 +45,7 @@ body {
     }
   }
   & .btn {
-    @include btn;
+    @include btn-filled;
     @include horizontal-vertical-margin(20px, 0px, 20px, 0px);
     @include width(400px);
   }

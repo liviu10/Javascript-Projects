@@ -86,7 +86,7 @@ body {
       @include flex-center();
       flex-wrap: wrap;
       & .btn {
-        @include btn;
+        @include btn-filled;
         @include width(80px);
         @include height(80px);
         &--all-clear {

@@ -19,6 +19,7 @@ body {
   @include height(50px);
   @include flex-center();
   .btn {
+    @include btn-filled;
     &--standard {
       background-color: #3377ff;
       border-color: #3377ff;

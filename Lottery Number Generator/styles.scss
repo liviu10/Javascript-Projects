@@ -40,6 +40,7 @@ body {
   @include height(50px);
   @include flex-center();
   .btn {
+    @include btn-filled;
     &--standard {
       @include border-radius(5px, 5px, 5px, 5px);
     }

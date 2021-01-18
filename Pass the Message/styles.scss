@@ -34,6 +34,7 @@ body {
     @include height(60px);
   }
   & .btn {
+    @include btn-filled;
     @include all-margin(20px, 0px, 0px, 0px);
     &--standard {
       background-color: #66CC00;
