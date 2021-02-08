@@ -44,10 +44,13 @@ body {
   @include height(50px);
   @include flex-center-left-center();
   & .btn {
-    // @include btn-filled;
+    @include btn-filled;
     @include height(50px);
   }
 }
 .button-reset {
+  & .btn {
+    @include btn-filled;
+  }
   @include flex-center();
 }
