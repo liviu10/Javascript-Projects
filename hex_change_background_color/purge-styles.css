@@ -1,0 +1,80 @@
+/* INCLUDING THE RESET FILE */
+html, body, span,
+h1 {
+  margin: 0rem;
+  padding: 0rem;
+  border-width: 0rem;
+}
+
+/* INCLUDING ALL THE BOX MODEL MIXINS */
+/* INCLUDING ALL THE HTML COMPONENTS */
+/* INCLUDING ALL THE FLEXBOX MIXINS */
+/* INCLUDING ALL THE TYPOGRAPHY MIXINS */
+body {
+  width: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FFFFFF;
+}
+
+.btn {
+  margin: 0rem;
+  padding: 0rem;
+  width: 9.375rem;
+  height: 3.125rem;
+  padding: 0.3125rem 0rem;
+  width: 12.5rem;
+  height: auto;
+}
+
+.btn__text {
+  font-size: 1rem;
+  letter-spacing: 0.125rem;
+  text-indent: 0rem;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: left;
+  text-decoration: none;
+  text-overflow: hidden;
+  text-transform: normal;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn--standard {
+  color: #000000;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #E6E6E6;
+  border-color: #CCCCCC;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.btn:focus {
+  outline: none;
+}
+/*# sourceMappingURL=styles.css.map */
