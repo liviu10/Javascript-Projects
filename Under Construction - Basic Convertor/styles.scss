@@ -1,0 +1,110 @@
+@import "../main";
+
+body {
+  width: auto;
+  height: 100vh;
+  @include flex-center();
+}
+.container {
+  @include all-border(1px, 1px, 1px, 1px);
+  @include border-radius(5px, 5px, 5px, 5px);
+  @include width(500px);
+  @include height(700px);
+  @include flex-center();
+  flex-direction: column;
+  & .title {
+    @include width(480px);
+    @include height(60px);
+    @include flex-center();
+    & .h1-typography {
+      @include h1-typography;
+      @include all-margin(0px, 0px, 0px, 0px);
+      @include height(60px);
+      @include font-size(50px);
+      user-select: none;
+      @include flex-center();
+    }
+  }
+  & .subtitle {
+    @include width(480px);
+    @include height(60px);
+    @include flex-center();
+    & .p-typography {
+      @include p-typography;
+      @include all-margin(0px, 0px, 0px, 0px);
+      @include width(240px);
+      @include height(60px);
+      @include font-size(20px);
+      user-select: none;
+      @include flex-center();
+    }
+    & .dropdown-flex {
+      @include height(60px);
+      @include flex-center-left-center();
+      & .dropdown {
+        @include height(25px);
+      }
+    }
+  }
+  & .input-center {
+    @include width(500px);
+    @include flex-center();
+    & .input {
+      @include input;
+      @include width(500px);
+      @include height(115px);
+      @include flex-center();
+      flex-direction: column;
+      &--standard {
+        @include all-padding(0px, 0px, 0px, 0px);
+      }
+      &__control {
+        @include all-margin(0px, 0px, 0px, 0px);
+        @include all-border(0px, 0px, 0px, 0px);
+        @include all-padding(0px, 0px, 0px, 10px);
+        @include width(230px);
+        @include height(80px);
+        @include font-size(40px);
+        text-align: left;
+        background-color: #000000;
+        color: #FFFFFF;
+        user-select: none;
+      }
+      & .dropdown {
+        @include all-margin(10px, 0px, 0px, 0px);
+        @include height(25px);
+      }
+    }
+  }
+  & .calculator {
+    @include width(500px);
+    @include height(465px);
+    @include flex-center();
+    flex-direction: column;
+    & .calculator-keys {
+      @include width(240px);
+      @include flex-center();
+      flex-wrap: wrap;
+      & .btn {
+        @include btn-filled;
+        @include width(80px);
+        @include height(80px);
+        &--all-clear {
+          background-color: #FF0000;
+          border-color: #FF0000;
+          color: #FFFFFF;
+        }
+        &--equal-sign {
+          @include width(240px);
+          background-color: #2E86C0;
+          border-color: #2E86C0;
+          color: #FFFFFF;
+        }
+        &__text {
+          @include font-size(20px);
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
