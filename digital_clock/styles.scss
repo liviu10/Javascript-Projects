@@ -1,0 +1,20 @@
+@import "../main";
+
+body {
+  width: auto;
+  height: 100vh;
+  @include flex-center();
+}
+.container {
+  @include all-border(1px, 1px, 1px, 1px);
+  @include border-radius(5px, 5px, 5px, 5px);
+  border-color: #999999;
+  @include all-padding(20px, 20px, 20px, 20px);
+  @include width(600px);
+  @include height(380px);
+  @include flex-center();
+  flex-direction: column;
+  & .h1-typography, & #digital_clock {
+    @include h1-typography;
+  }
+}

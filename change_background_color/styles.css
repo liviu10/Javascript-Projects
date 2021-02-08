@@ -1,0 +1,171 @@
+/* INCLUDING THE RESET FILE */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0rem;
+  padding: 0rem;
+  border-width: 0rem;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0rem;
+}
+
+/* INCLUDING ALL THE BOX MODEL MIXINS */
+/* INCLUDING ALL THE HTML COMPONENTS */
+/* INCLUDING ALL THE FLEXBOX MIXINS */
+/* INCLUDING ALL THE TYPOGRAPHY MIXINS */
+body {
+  width: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+}
+
+.btn {
+  margin: 0rem;
+  padding: 0rem;
+  width: 9.375rem;
+  height: 3.125rem;
+  padding: 0.3125rem 0rem;
+  height: auto;
+}
+
+.btn__text {
+  font-size: 1rem;
+  letter-spacing: 0.125rem;
+  text-indent: 0rem;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: left;
+  text-decoration: none;
+  text-overflow: hidden;
+  text-transform: normal;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn--standard {
+  color: #000000;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #E6E6E6;
+  border-color: #CCCCCC;
+}
+
+.btn--primary {
+  color: #FFFFFF;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #007BFF;
+  border-color: #007BFF;
+}
+
+.btn--secondary {
+  color: #FFFFFF;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #6C757D;
+  border-color: #6C757D;
+}
+
+.btn--success {
+  color: #FFFFFF;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #28A745;
+  border-color: #28A745;
+}
+
+.btn--danger {
+  color: #FFFFFF;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #DC3545;
+  border-color: #DC3545;
+}
+
+.btn--warning {
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #FFC107;
+  border-color: #FFC107;
+}
+
+.btn--info {
+  color: #FFFFFF;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #17A2B8;
+  border-color: #17A2B8;
+}
+
+.btn--light {
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #F8F9FA;
+  border-color: #F8F9FA;
+}
+
+.btn--dark {
+  color: #FFFFFF;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #343A40;
+  border-color: #343A40;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.btn:focus {
+  outline: none;
+}
+/*# sourceMappingURL=styles.css.map */
